@@ -39,8 +39,11 @@ $personagem = new $nomeClasse();
     <hr>
     <h3>Ataques</h3>
     <p><?php $personagem->ataqueComum(); ?></p>
-    <p><?php $personagem->defender(); ?></p>
-    <p><?php $personagem->esquivar(); ?></p>
+    <p><?php echo $personagem->__get('ataque01'); ?></p>
+    <p><?php echo $personagem->__get('ataque02'); ?></p>
+    <p><?php echo $personagem->__get('ataque03'); ?></p>
+    <hr>
+    <h3>Ataques Especiais</h3>
     <p><?php $personagem->ataqueEspecial(); ?></p>
 </body>
 </html>
